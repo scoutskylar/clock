@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Clock</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="theme-color" content="#e4e4e4">
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="assets/style.css">
+	</head>
+
+	<body>
+		<div>
+			<h1 style="margin-top: 0.1em; margin-bottom: 0;">
+				String Length Calculator
+			</h1>
+			<div>
+				<p>{{ text }}</p>
+				<form action="length-calc" method="post">
+					<label for="string">Enter a string: </label><input type="text" name="string" id="string" />
+					<input type="submit" value="Submit">
+				</form>
+				<p>
+					Other pages
+					<ul>
+						<li><a href="..">Default Clock</a></li>
+						<li><a href="login">Login</a></li>
+						<li><a href="custom">Customized Clock (must login first)</a></li>
+						<li><b>String Length Calculator</b> (current page)</li>
+						<li><a href="sync">Synchronization API</a></li>
+					</ul>
+				</p>
+			</div>
+		</div>
+
+		<div id="foot" style="position: fixed; bottom: 0; padding: 0.7em; border-top: 2px solid; margin: 0 auto; left: 0; right: 0; box-sizing: border-box; background: inherit;">
+			made by Skylar Smith
+		</div>
+	</body>
+</html>

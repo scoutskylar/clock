@@ -1,0 +1,41 @@
+html {
+    background-color: #e4e4e4;
+    height: 100vh;
+}
+body {
+    background-color: white;
+    font-family: sans-serif;
+    margin: 0 auto;
+    min-height: 100%;
+    overflow: auto;
+    padding: 0.5em 0.7em 4em 0.7em;
+    box-sizing: border-box;
+}
+body, #foot {
+    width: 768px;
+    max-width: 100%;
+}
+*:focus {
+    outline-color: blue;
+}
+label {
+    display: block;
+}
+input[type="button"] {
+    background: white;
+    border: 2px solid;
+    font: inherit;
+    font-weight: bold;
+    margin: 0.2em;
+    padding: 0.2em 0.7em;
+    border-radius: 6px;
+}
+input[type="button"]:hover {
+    background: #f4f4f4;
+}
+input[type="button"]:active {
+    background: #999999;
+}
+input[type="button"]:focus {
+    outline-offset: 3px;
+}

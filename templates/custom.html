@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Clock</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="theme-color" content="#e4e4e4">
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="assets/style.css">
+		<script src="assets/script.js" defer></script>
+	</head>
+
+	<body>
+		<div>
+			<h1 style="margin-top: 0.1em; margin-bottom: 0;">
+				Welcome, {{ name }}!
+			</h1>
+			<div>
+				<p id="clock">--</p>
+				<p>
+					Other pages
+					<ul>
+						<li><a href="..">Default Clock</a></li>
+						<li><a href="login">Login</a></li>
+						<li><b>Customized Clock</b> (current page)</li>
+						<li><a href="length-calc">String Length Calculator</a></li>
+						<li><a href="sync">Synchronization API</a></li>
+					</ul>
+				</p>
+			</div>
+		</div>
+
+		<div id="foot" style="position: fixed; bottom: 0; padding: 0.7em; border-top: 2px solid; margin: 0 auto; left: 0; right: 0; box-sizing: border-box; background: inherit;">
+			made by Skylar Smith
+		</div>
+	</body>
+</html>
