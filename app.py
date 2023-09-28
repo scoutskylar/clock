@@ -1,6 +1,9 @@
 from flask import *
 import time
 
+def generate_timestamp():
+    return str(int(time.time() * 1000))
+
 app = Flask(__name__)
 
 @app.route('/favicon.ico')
@@ -17,15 +20,15 @@ def clientscript():
 
 @app.route("/")
 def index():
-    return render_template('index.html', timestamp=str(int(time.time() * 1000)))
+    return render_template('index.html', timestamp=generate_timestamp())
 
 @app.route("/sync")
 def now():
-    return Response(str(int(time.time() * 1000)), mimetype='text/plain')
+    return Response(generate_timestamp(), mimetype='text/plain')
 
 @app.route("/login")
 def login():
-    return render_template('login.html', timestamp=str(int(time.time() * 1000)))
+    return render_template('login.html', timestamp=generate_timestamp())
 
 @app.route("/custom", methods=["GET", "POST"])
 def custom():
